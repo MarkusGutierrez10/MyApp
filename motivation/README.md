@@ -1,4 +1,4 @@
-# motivation
+# mi_app
 
 A new Flutter project.
 
