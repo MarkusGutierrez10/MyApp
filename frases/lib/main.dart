@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'feature/home/presentation/views/failure_view.dart';
 import 'feature/home/presentation/views/init_view.dart';
+import 'feature/home/presentation/views/loading_view.dart';
 import 'feature/home/presentation/views/void_view.dart';
 
 void main(List<String> args) {
@@ -14,8 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: view_void(),
+      home: error()
     );
   }
-
 }
+
+
