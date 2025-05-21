@@ -69,6 +69,8 @@ flutter:
     - assets/Perfil/Pablo Neruda.jpg
     - assets/Perfil/Charles Bukowski.jpg
     - assets/Perfil/Maya Angelou.jpg
+    - assets/cargando.gif
+    - assets/error.png
 
     
 

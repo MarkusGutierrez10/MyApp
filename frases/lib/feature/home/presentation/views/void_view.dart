@@ -1,7 +1,13 @@
 
 import 'package:flutter/material.dart';
 
-  Scaffold view_void() {
+class principal extends StatelessWidget {
+  const principal({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -70,7 +76,7 @@ import 'package:flutter/material.dart';
                       ],
                     ),
                   ),
-
+    
               // Card #2 — Sigmund Freud
               Card(
                 elevation: 4,
@@ -128,7 +134,7 @@ import 'package:flutter/material.dart';
                   ],
                 ),
               ),
-
+    
               // Card #3 - William Shakespeare
               Card(
                 elevation: 4,
@@ -186,7 +192,7 @@ import 'package:flutter/material.dart';
                   ],
                 ),
               ),
-
+    
               // Card #4 - Gabriel García Márquez
               Card(
                 elevation: 4,
@@ -244,7 +250,7 @@ import 'package:flutter/material.dart';
                   ],
                 ),
               ),
-
+    
               // Card #5 — Fernando Pessoa
               Card(
                 elevation: 4,
@@ -302,7 +308,7 @@ import 'package:flutter/material.dart';
                   ],
                 ),
               ),
-
+    
               // Card #6 - Jorge Luis Borges
               Card(
                 elevation: 4,
@@ -360,7 +366,7 @@ import 'package:flutter/material.dart';
                   ],
                 ),
               ),
-
+    
               // Card #7 - Pablo Neruda
               Card(
                 elevation: 4,
@@ -418,7 +424,7 @@ import 'package:flutter/material.dart';
                   ],
                 ),
               ),
-
+    
               // Card #8 - Charles Bukowski
               Card(
                 elevation: 4,
@@ -476,7 +482,7 @@ import 'package:flutter/material.dart';
                   ],
                 ),
               ),
-
+    
               // Card #9 - Maya Angelou
               Card(
                 elevation: 4,
@@ -534,7 +540,7 @@ import 'package:flutter/material.dart';
                   ],
                 ),
               ),
-
+    
               //terminar Card
             ],
           ),
@@ -542,3 +548,4 @@ import 'package:flutter/material.dart';
       ),
     );
   }
+}
