@@ -11,7 +11,8 @@ class loading extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // Fondo con opacidad
+          
+        
           Opacity(
             opacity: 0.2,
             child: Image.asset(
@@ -19,7 +20,7 @@ class loading extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          // Centro de la pantalla con imagen y texto encima
+
           Center(
             child: Stack(
               alignment: Alignment.center,
