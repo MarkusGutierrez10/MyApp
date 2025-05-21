@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:frases/feature/home/presentation/bloc/home_bloc.dart';
 class init extends StatelessWidget {
   const init({
     super.key,
@@ -21,7 +22,8 @@ class init extends StatelessWidget {
             height: 50, 
             child: ElevatedButton(
               onPressed: () {
-                print('¡Botón presionado!');
+                final homeBloc = BlocProvider.of<HomeBloc>(context);
+                      homeBloc.add(HomeSearchPressed());
               },
               child: Text('Presionar'),
             ),
