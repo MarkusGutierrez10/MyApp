@@ -14,20 +14,32 @@ class error extends StatelessWidget {
           // Fondo con opacidad
           Opacity(
             opacity: 0.2,
-            child: Image.asset('assets/fondo.jpg',
+            child: Image.asset(
+              'assets/fondo.jpg',
               fit: BoxFit.cover,
             ),
           ),
-          // Centro de la pantalla con imagen y texto encima
+          // Centro de la pantalla con imagen y texto debajo
           Center(
-            child: Stack(
-              alignment: Alignment.center,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Image.asset('assets/error.png',
+                Image.asset(
+                  'assets/error.jpg',
                   width: 200,
                   height: 200,
                   fit: BoxFit.cover,
-                )
+                ),
+                const SizedBox(height: 16),
+                const Text(
+                  '¡error!',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 241, 112, 103),
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ],
             ),
           ),
